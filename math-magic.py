@@ -3,7 +3,7 @@
 from __future__ import nested_scopes, generators, division, absolute_import, with_statement, print_function, unicode_literals
 import random
 
-SCORE_EMOJI=['😡', '🤮', '🤒', '🤕', '🖐', '💪', '👌', '😀', '😁', '😆', '🤣']
+SCORE_EMOJI=['😡', '🤮', '🤒', '🤕', '👌', '🖐', '💪', '😀', '😁', '😆', '🤣']
 
 def plus(a, b):
 	return a + b
