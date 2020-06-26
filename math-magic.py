@@ -3,6 +3,8 @@
 from __future__ import nested_scopes, generators, division, absolute_import, with_statement, print_function, unicode_literals
 import random
 
+SCORE_EMOJI=['😡', '🤮', '🤒', '🤕', '🖐', '💪', '👌', '😀', '😁', '😆', '🤣']
+
 def plus(a, b):
 	return a + b
 
@@ -21,7 +23,7 @@ def print_problem(operator, a, b):
 	print(problem_format.format(a, operator, b))
 
 def print_score(score):
-	print("[Score: {}]".format(score))
+	print("{} [Score: {}]".format(SCORE_EMOJI[score], score))
 
 for _i in range(10):
 	operator, funct, minimum, maximum = operations[random.randint(0,2)]
