@@ -3,6 +3,11 @@
 from __future__ import nested_scopes, generators, division, absolute_import, with_statement, print_function, unicode_literals
 import random
 
+try:
+    input = raw_input
+except NameError:
+    pass
+
 SCORE_EMOJI=['😡', '🤮', '🤒', '🤕', '👌', '🖐', '💪', '😀', '😁', '😆', '🤣']
 
 def plus(a, b):
@@ -33,7 +38,7 @@ for _i in range(10):
 		try:
 			print_score(score)
 			print_problem(operator, a, b)
-			answer = int(raw_input().strip())
+			answer = int(input().strip())
 			break
 		except ValueError:
 			print("What? Please put in a number!")
